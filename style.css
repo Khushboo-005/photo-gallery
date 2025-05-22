@@ -94,6 +94,32 @@ body {
   transform: scale(1.05);
 }
 
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.hidden {
+  display: none !important;
+}
+
+
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
