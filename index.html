@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="landing">
+    <h1>Step into the world through my lens...</h1>
+    <button onclick="enterGallery()">Enter Gallery</button>
+  </div>
+
+    <div id="main-content" class="hidden">
+  <div class="intro-text">
+    <h2>NAZARIYA</h2>
+    <p>A collection of my captured moments</p>
+  </div>
+
+  <div class="gallery">
+    <!-- Your image grid here -->
+  </div>
+</div>
+
+
+        <div class="gallery">
+            <div onclick="openLightbox('images/photo1.jpeg')">
+                <img src="images/photo1.jpeg" alt="Photo 1">
+            </div>
+            <div onclick="openLightbox('images/photo2.jpeg')">
+                <img src="images/photo2.jpeg" alt="Photo 2">
+            </div>
+            <div onclick="openLightbox('images/photo3.jpeg')">
+                <img src="images/photo3.jpeg" alt="Photo 3">
+            </div>
+            <div onclick="openLightbox('images/photo4.jpeg')">
+                <img src="images/photo4.jpeg" alt="Photo 4">
+            </div>
+            <div onclick="openLightbox('images/photo5.jpeg')">
+                <img src="images/photo5.jpeg" alt="Photo 5">
+            </div>
+            <div onclick="openLightbox('images/photo6.jpeg')">
+                <img src="images/photo6.jpeg" alt="Photo 6">
+            </div>
+            <div onclick="openLightbox('images/photo7.jpeg')">
+                <img src="images/photo7.jpeg" alt="Photo 7">
+            </div>
+            <div onclick="openLightbox('images/photo8.jpeg')">
+                <img src="images/photo8.jpeg" alt="Photo 8">
+            </div>
+        </div>
+        
+
+  <script>
+    function enterGallery() {
+      document.getElementById('landing').style.display = 'none';
+      document.getElementById('main-content').classList.remove('hidden');
+
+
+      
+    }
+  </script>
+</body>
+</html>
